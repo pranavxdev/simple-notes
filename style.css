@@ -3,16 +3,29 @@
   padding: 0;
 }
 
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
 #note {
-  width: 200px;
-  height: 200px;
+  width: 800px;
+  height: 500px;
   background-color: aliceblue;
 }
 
 #title {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 24px;
+}
+
+#text {
+}
+
+.text-viewer {
+  margin-top: 24px;
+  height: 425px;
+  overflow: auto;
+  outline: none;
 }
 
 .viewer {
