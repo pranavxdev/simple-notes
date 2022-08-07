@@ -34,6 +34,7 @@ addNote.addEventListener("click", function () {
     text.classList.add("text-viewer");
     title.setAttribute("contentEditable", "true");
     text.setAttribute("contentEditable", "true");
+    text.removeAttribute("id");
   });
 
   // event when modal is clicked
@@ -46,5 +47,6 @@ addNote.addEventListener("click", function () {
     text.classList.remove("text-viewer");
     title.setAttribute("contentEditable", "false");
     text.setAttribute("contentEditable", "false");
+    text.setAttribute("id", "text");
   });
 });
