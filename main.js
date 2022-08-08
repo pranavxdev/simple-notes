@@ -34,10 +34,6 @@ addNote.addEventListener("click", function () {
   tile.appendChild(text);
   noteField.appendChild(tile);
 
-  remove.addEventListener("click", function () {
-    noteField.removeChild(tile);
-  });
-
   // event listener when tile is clicked
 
   tile.addEventListener("click", function () {
@@ -55,7 +51,6 @@ addNote.addEventListener("click", function () {
   });
 
   // event when modal is clicked
-
   modal.addEventListener("click", function () {
     modal.style.display = "none";
     tile.classList.remove("viewer");
@@ -67,5 +62,11 @@ addNote.addEventListener("click", function () {
     text.setAttribute("contentEditable", "false");
     text.setAttribute("id", "text");
     remove.style.cssText = "display: initial";
+  });
+
+  // deletes note when remove button is clicked
+  remove.addEventListener("click", function (element) {
+    element.stopPropagation();
+    noteField.removeChild(tile);
   });
 });
