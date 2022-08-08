@@ -1,5 +1,6 @@
 const noteField = document.querySelector(".container");
 const addNote = document.getElementById("addNote");
+const clear = document.getElementById("clearAll");
 
 addNote.addEventListener("click", function () {
   const modal = document.getElementById("modal");
@@ -70,5 +71,10 @@ addNote.addEventListener("click", function () {
   remove.addEventListener("click", function (element) {
     element.stopPropagation();
     noteField.removeChild(tile);
+  });
+
+  // removes all element when clear button is clicked
+  clear.addEventListener("click", function () {
+    noteField.innerHTML = "";
   });
 });

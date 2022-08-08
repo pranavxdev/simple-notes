@@ -22,7 +22,7 @@ body {
 .mac {
   display: flex;
   column-gap: 5px;
-  padding: 10px;
+  padding: 12px;
 }
 
 .dot {
@@ -43,6 +43,13 @@ body {
   background-color: #61c455;
 }
 
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
 #addNote {
   width: 100px;
   height: 40px;
@@ -50,12 +57,25 @@ body {
   border-radius: 7px;
   font-size: 16px;
   font-weight: 500;
-  display: block;
-  margin: 0 auto;
   margin-top: 16px;
   background-color: #121212;
   color: #fff;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+#clearAll {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 16px;
+  background-color: #121212;
+  color: #fff;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .container {
@@ -75,6 +95,7 @@ body {
   width: 200px;
   height: 200px;
   border-radius: 12px;
+  cursor: pointer;
   background-color: rgb(18, 18, 18);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
@@ -156,6 +177,11 @@ body {
 
 #addNote:hover {
   background-color: #61c455;
+  font-weight: 600;
+}
+
+#clearAll:hover {
+  background-color: #ed6a5e;
   font-weight: 600;
 }
 
