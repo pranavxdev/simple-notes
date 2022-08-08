@@ -47,12 +47,15 @@ body {
   width: 100px;
   height: 40px;
   border: none;
-  border-radius: 8px;
+  border-radius: 7px;
   font-size: 16px;
   font-weight: 500;
   display: block;
   margin: 0 auto;
   margin-top: 16px;
+  background-color: #121212;
+  color: #fff;
+  transition: 0.2s ease-in-out;
 }
 
 .container {
@@ -114,7 +117,6 @@ body {
   margin-right: 10px;
   cursor: pointer;
   transition: 0.1s ease-in-out;
-  z-index: 2;
 }
 
 .text-viewer {
@@ -151,6 +153,11 @@ body {
 }
 
 /* animations */
+
+#addNote:hover {
+  background-color: #61c455;
+  font-weight: 600;
+}
 
 #remove:hover {
   background-color: #ed6a5e;

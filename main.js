@@ -38,6 +38,7 @@ addNote.addEventListener("click", function () {
 
   tile.addEventListener("click", function () {
     modal.style.display = "initial";
+    noteNav.style.cssText = "display: none";
     tile.classList.add("viewer");
     tile.style.width = "800px";
     tile.style.height = "500px";
@@ -53,6 +54,7 @@ addNote.addEventListener("click", function () {
   // event when modal is clicked
   modal.addEventListener("click", function () {
     modal.style.display = "none";
+    noteNav.style.display = "";
     tile.classList.remove("viewer");
     tile.style.cssText = "width: 200px";
     tile.style.cssText = "height: 200px";
